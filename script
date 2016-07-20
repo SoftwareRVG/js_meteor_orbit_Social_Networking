@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="generator" content="Software RVG HTML Editor (www.software-rvg.com)">
+    <meta name="dcterms.created" content="sรก., 18 jun. 2016 19:23:45 GMT">
+    <meta name="description" content="Software RVG Designs. 3D designs CSS,Javscript,SVG, Blender Animations">
+    <meta name="keywords" content="3D designs,CSS,Javascript,SVG,Blender Render, Animations">
+    <title>Software RVG Designs</title>
+    
+    <style type="text/css">
+    <!--
+    body {
+      color:#000000;
+      background-color:#FFFFFF;
+      background-image:url('Background Image');
+      background-repeat:no-repeat;
+    }
+    a  { color:#0000FF; }
+    a:visited { color:#800080; }
+    a:hover { color:#008000; }
+    a:active { color:#FF0000; }
+    -->
+    </style>
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body itemscope itemtype="http://schema.org/MediaObject">
+
+  </body>
+</html>
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+
+
+    <title>CodePen - svg  javascript 3d Animation Meteor Orbit by Software RVG</title>
+    
+    
+    <link rel="stylesheet" href="//codepen.io/assets/reset/normalize.css">
+
+    
+        <style>
+      {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+	box-sizing: border-box;
+}
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+html,
+body{
+	min-height: 100%;
+}
+body{
+	background-image: radial-gradient(mintcream 0%, lightgray 100%);
+}
+.text {
+  fill: url(#gr-radial);
+}
+
+/* Other styles */
+body {
+  min-height: 450px;
+  height: 100vh;
+  margin: 0;
+  background-image:url(https://agaudi.files.wordpress.com/2009/10/computer-generated-and-games_00313.jpg);
+ }
+body sgv {
+  background: none;
+  background: none;
+  background-size: .2em 100%;
+  font: 2.1em/1 Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0;
+}
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+	box-sizing: border-box;
+}
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+html,
+body{
+	min-height: 100%;
+}
+h4{color:#0489B1;
+font:arial;}
+body{
+	background-image: radial-gradient(mintcream 0%, lightgray 100%);
+}
+
+.container{
+	margin: 4% auto;
+	width: 210px;
+	height: 140px;
+	position: relative;
+	perspective: 1000px;
+}
+#carousel{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotation 20s infinite linear;
+}
+#carousel:hover{
+	animation-play-state: paused;
+}
+#carousel figure{
+	display: block;
+	position: absolute;
+	width: 186px;
+	height: 116px;
+	left: 10px;
+	top: 10px;
+	background: black;
+	overflow: hidden;
+	border: solid 5px #00ffff;
+}
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+
+img{
+	-webkit-filter: grayscale(1);
+	cursor: pointer;
+	transition: all .5s ease;
+}
+img:hover{
+	-webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+    </style>
+    </style>
+
+    
+    
+    
+  </head>
+
+  <body translate="no" >
+
+    
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Software RVG HTML Editor (www.software-rvg.com.com)">
+    <meta name="dcterms.created" content="vi., 10 jun. 2016 16:25:28 GMT">
+    <meta name="description" content="css,javascript,development,by;Software-RVG">
+    <meta name="keywords" content="css,javascript,Software RVG,3D animation,creative work,artistic work">
+    <title>css_javascript_3d_Animation_canvas_meteor_orbit_by_SoftwareRVG</title>
+    
+    <style type="text/css">
+    <!--
+header { font-family:impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+	       color:#ffffff;
+		   size: 100px;
+      color:#ffffff;
+      background-color:;}
+	p{ font-family:arial,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+	       color:#ffffff;
+		   size: 100px;
+      color:#00ff00;
+	  text-align:center;
+      background-color:;
+      background-image:url(https://agaudi.files.wordpress.com/2009/10/computer-generated-and-games_00313.jpg);
+      background-repeat:no-repeat;}
+    body {font-family:impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+	       color:#ffffff;
+		   size: 100px;
+      color:#0000ff;
+      background-color:;
+      background-image:url(https://agaudi.files.wordpress.com/2009/10/computer-generated-and-games_00313.jpg);
+      background-repeat:no-repeat;
+    }
+	h1{font-family:impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+	       color:#ffffff;
+		   size: 100px;
+      color:#000000;
+	  text-align:center;
+      background-color:#00ff00;
+      background-image:url;
+      background-repeat:no-repeat; }
+	
+    a  { color:#0000FF;}
+    a:visited { color:#800080; }
+    a:hover { color:#008000; }
+    a:active { color:#FF0000; }
+	 {font-family:impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+	       color:#df3a01;
+		   size: 100px; }
+
+    -->
+    </style>
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body itemscope itemtype="http://schema.org/MusicVideoObject">
+  <div id="canvas"></div>
+  <html><head>
+    <meta charset="UTF-8">
+
+
+    <title>CodePen - ThreeJS Gradient</title>
+    
+    
+    
+    
+        <style>
+      html {
+  width: 106%;
+  height: 100%;
+  
+  background: #11e8bb; /* Old browsers */
+  background: -moz-linear-gradient(top,  #11e8bb 0%, #8200c9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #11e8bb 0%,#8200c9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #11e8bb 0%,#8200c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#11e8bb', endColorstr='#8200c9',GradientType=0 ); /* IE6-9 */
+}
+
+    </style>
+
+    
+    
+    
+  </head>
+  
+ <div class="yae" style="margin-left:0px;margin-right:0px;margin-top: -640px; background:url('https://lh3.googleusercontent.com/-jbs4mQ7SYQQ/VvE8XUo-sBI/AAAAAAAACD4/gevk-Y4tb0gz4jXR33Lr43yUcvdLqahIwCL0B/s191-fcrop64=1,072b1594fb51edd9/SoftwareRVG_copyright.png'); padding-top:45px; "><div class="egd" style=" height:62px; "></div></div>
+
+<div id="phaser-example"><canvas width="800" height="300" style="display: block; touch-action: none; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 24, 88, 0.8);
+width: 800px;height: 100px;"></canvas></div>
+
+<style>
+      
+
+/* Main styles */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.text {
+  fill: url(#gr-radial);
+}
+
+/* Other styles */
+body {
+  min-height: 450px;
+  height: 100vh;
+  margin: 0;
+  background-image:url(https://agaudi.files.wordpress.com/2009/10/computer-generated-and-games_00313.jpg);
+} }
+body sgv {
+  background: none;
+  background: none;
+  background-size: .2em 100%;
+  font: 2.1em/1 Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+body text {
+  background: #222 -webkit-linear-gradient(0deg, #222 50%, #272727 50%);
+  background: #222 linear-gradient(90deg, #222 50%, #272727 50%);
+  background-size: .1em 100%;
+  font: 2.1em/2 Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+svg {
+  position: top;
+  width: 100%;
+  height: 100%;
+}
+
+
+    </style>
+	
+
+<div class:"text">
+
+<svg viewbox="0 0 600 300">
+ <!-- Gradient -->
+  <radialgradient id="gr-radial" cx="50%" cy="50%" r="70%">
+    <!-- Animation for radius of gradient -->
+    <animate attributename="r" values="0%;150%;100%;0%" dur="3s" repeatcount="indefinite"></animate>
+    <!-- Animation for colors of stop-color -->
+    <stop stop-color="#FFFf00" offset="1">
+      <animate attributename="stop-color" values="#0000FF;#ffff00;#00FF00;#FF0000;#00FF00;#0000FF;#FFFF00;#00FF00;#FF0000;#0000FF;#FFFF00;#FF0000" dur="20s" repeatcount="indefinite"></animate>
+    </stop>
+    <stop stop-color="rgba(55,55,55,0)" offset="100%"></stop>
+  </radialgradient>
+  
+ 
+  <!-- Text -->
+  <text text-anchor="middle" x="50%" y="15%" dy=".35em" class="text">
+    SOFTWARE RVG DESIGNS 
+ </text>
+  
+ </svg></div>
+
+<div id="phaser-example"><canvas width="800" height="300" style="display: block; touch-action: none; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0, 24, 88, 0.8);
+width: 800px;height: 100px;"></canvas></div>
+
+<style>
+      
+
+/* Main styles */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.text {
+  fill: url(#gr-radial);
+}
+
+/* Other styles */
+body {
+  min-height: 450px;
+  height: 100vh;
+  margin: 0;
+  background-image:url(https://agaudi.files.wordpress.com/2009/10/computer-generated-and-games_00313.jpg);
+} }
+body sgv {
+  background: none;
+  background: none;
+  background-size: .1em 100%;
+  font: 1.1em/1 Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+body text {
+  background: #222 -webkit-linear-gradient(0deg, #222 50%, #272727 50%);
+  background: #222 linear-gradient(90deg, #222 50%, #272727 50%);
+  background-size: .1em 100%;
+  font: 1.1em/1 Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+    </style>
+	
+
+<div class:"text">
+
+<svg viewbox="0 0 600 500">
+ <!-- Gradient -->
+  <radialgradient id="gr-radial" cx="50%" cy="50%" r="70%">
+    <!-- Animation for radius of gradient -->
+    <animate attributename="r" values="0%;150%;100%;0%" dur="3s" repeatcount="indefinite"></animate>
+    <!-- Animation for colors of stop-color -->
+    <stop stop-color="#FFFf00" offset="0">
+      <animate attributename="stop-color" values="#0000FF;#ffff00;#00FF00;#FF0000;#00FF00;#0000FF;#FFFF00;#00FF00;#FF0000;#0000FF;#FFFF00;#FF0000" dur="20s" repeatcount="indefinite"></animate>
+    </stop>
+    <stop stop-color="rgba(55,55,55,0)" offset="100%"></stop>
+  </radialgradient>
+  
+ 
+  <!-- Text -->
+  <text text-anchor="middle" x="50%" y="45%" dy=".35em" class="text">
+    3d animation designs software  
+ </text>
+  
+ </svg></div>
+  <body translate="no">
+
+    <div id="canvas"><canvas style="width: 1366px; height: 436px;" height="436" width="1366"></canvas></div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r77/three.min.js"></script>
+
+        <script>
+        var renderer, scene, camera, composer, circle, skelet, particle;
+
+window.onload = function() {
+  init();
+  animate();
+}
+
+function init() {
+  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  renderer.setPixelRatio((window.devicePixelRatio) ? window.devicePixelRatio : 1);
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.autoClear = false;
+  renderer.setClearColor(0x000000, 0.0);
+  document.getElementById('canvas').appendChild(renderer.domElement);
+
+  scene = new THREE.Scene();
+
+  camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
+  camera.position.z = 400;
+  scene.add(camera);
+
+  circle = new THREE.Object3D();
+  skelet = new THREE.Object3D();
+  particle = new THREE.Object3D();
+
+  scene.add(circle);
+  scene.add(skelet);
+  scene.add(particle);
+
+  var geometry = new THREE.TetrahedronGeometry(2, 0);
+  var geom = new THREE.IcosahedronGeometry(7, 1);
+  var geom2 = new THREE.IcosahedronGeometry(15, 1);
+
+  var material = new THREE.MeshPhongMaterial({
+    color: 0xf7fe2e,
+    shading: THREE.FlatShading
+  });
+
+  for (var i = 0; i < 1000; i++) {
+    var mesh = new THREE.Mesh(geometry, material);
+    mesh.position.set(Math.random() - 0.5, Math.random() - 0.5, Math.random() - 0.5).normalize();
+    mesh.position.multiplyScalar(90 + (Math.random() * 700));
+    mesh.rotation.set(Math.random() * 2, Math.random() * 2, Math.random() * 2);
+    particle.add(mesh);
+  }
+
+  var mat = new THREE.MeshPhongMaterial({
+    color: 0xdf3a01,
+    shading: THREE.FlatShading
+  });
+
+  var mat2 = new THREE.MeshPhongMaterial({
+    color: 0xffff00,
+    wireframe: true,
+    side: THREE.DoubleSide
+
+  });
+
+  var planet = new THREE.Mesh(geom, mat);
+  planet.scale.x = planet.scale.y = planet.scale.z = 16;
+  circle.add(planet);
+
+  var planet2 = new THREE.Mesh(geom2, mat2);
+  planet2.scale.x = planet2.scale.y = planet2.scale.z = 10;
+  skelet.add(planet2);
+
+  var ambientLight = new THREE.AmbientLight(0x999999 );
+  scene.add(ambientLight);
+  
+  var lights = [];
+lights[0] = new THREE.DirectionalLight( 0xffffff, 1 );
+lights[0].position.set( 1, 0, 0 );
+lights[1] = new THREE.DirectionalLight( 0x11E8BB, 1 );
+lights[1].position.set( 0.75, 1, 0.5 );
+lights[2] = new THREE.DirectionalLight( 0x8200C9, 1 );
+lights[2].position.set( -0.75, -1, 0.5 );
+scene.add( lights[0] );
+scene.add( lights[1] );
+scene.add( lights[2] );
+  
+
+  window.addEventListener('resize', onWindowResize, false);
+
+};
+
+function onWindowResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
+
+function animate() {
+  requestAnimationFrame(animate);
+
+  particle.rotation.x += 0.0000;
+  particle.rotation.y -= 0.0040;
+  circle.rotation.x -= 0.0020;
+  circle.rotation.y -= 0.0030;
+  skelet.rotation.x -= 0.0010;
+  skelet.rotation.y += 0.0020;
+  renderer.clear();
+
+  renderer.render( scene, camera )
+};
+     
+    </script>
+	
+				
+	<footer>
+	<style>
+	div{margin-left: 23px;margin-right:23px;
+	 }
+	</style>
+	<h1> ROBER VILLAR GARCIA</h1> <p>SOFTWARE RVG DEVELOPER</P>
+					<div class="byline"><h4> .</h4></div>
+	
+	<div id="comp-io8rsy2fitemsContainer" class="s7itemsContainer" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0"><div style="width:41px;height:41px;margin-bottom:0;margin-right:12px;display:inline-block;" class="s7imageItem" id="comp-io8rsy2fdataItem-io8rsy30" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.0"><a href="https://www.facebook.com/Software-RVG-833355843449016/?fref=ts" target="_blank" id="comp-io8rsy2fdataItem-io8rsy30link" class="s7imageItemlink" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.0.0"><div style="width:41px;height:41px;position:absolute;" id="comp-io8rsy2fdataItem-io8rsy30image" class="s7imageItemimage" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.0.0.0"><div class="s7imageItemimagepreloader" id="comp-io8rsy2fdataItem-io8rsy30imagepreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.0.0.0.0"></div><img id="comp-io8rsy2fdataItem-io8rsy30imageimage" alt="" src="https://static.wixstatic.com/media/c9fcc4_5e408f8bcaee43d5885eebd01ec882d1.png/v1/fill/w_41,h_41,al_c,usm_0.66_1.00_0.01/c9fcc4_5e408f8bcaee43d5885eebd01ec882d1.png" style="width:41px;height:41px;object-fit:cover;" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.0.0.0.$image" /></div></a></div><div style="width:41px;height:41px;margin-bottom:0;margin-right:12px;display:inline-block;" class="s7imageItem" id="comp-io8rsy2fdataItem-io8rsy32" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.1"><a href="https://twitter.com/SoftwareRVG" target="_blank" id="comp-io8rsy2fdataItem-io8rsy32link" class="s7imageItemlink" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.1.0"><div style="width:41px;height:41px;position:absolute;" id="comp-io8rsy2fdataItem-io8rsy32image" class="s7imageItemimage" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.1.0.0"><div class="s7imageItemimagepreloader" id="comp-io8rsy2fdataItem-io8rsy32imagepreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.1.0.0.0"></div><img id="comp-io8rsy2fdataItem-io8rsy32imageimage" alt="" src="https://static.wixstatic.com/media/c9fcc4_30b27bc2f2a14bf6a90105d86a8c2b03.png/v1/fill/w_41,h_41,al_c,usm_0.66_1.00_0.01/c9fcc4_30b27bc2f2a14bf6a90105d86a8c2b03.png" style="width:41px;height:41px;object-fit:cover;" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.1.0.0.$image" /></div></a></div><div style="width:41px;height:41px;margin-bottom:0;margin-right:12px;display:inline-block;" class="s7imageItem" id="comp-io8rsy2fdataItem-io8rsy321" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.2"><a href="https://plus.google.com/u/0/b/113801936038705018323/+Softwarervg-programacion/posts" target="_blank" id="comp-io8rsy2fdataItem-io8rsy321link" class="s7imageItemlink" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.2.0"><div style="width:41px;height:41px;position:absolute;" id="comp-io8rsy2fdataItem-io8rsy321image" class="s7imageItemimage" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.2.0.0"><div class="s7imageItemimagepreloader" id="comp-io8rsy2fdataItem-io8rsy321imagepreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.2.0.0.0"></div><img id="comp-io8rsy2fdataItem-io8rsy321imageimage" alt="" src="https://static.wixstatic.com/media/c9fcc4_d29fa4d8660746f4a0418d0637266928.png/v1/fill/w_41,h_41,al_c,usm_0.66_1.00_0.01/c9fcc4_d29fa4d8660746f4a0418d0637266928.png" style="width:41px;height:41px;object-fit:cover;" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.2.0.0.$image" /></div></a></div><div style="width:41px;height:41px;margin-bottom:0;margin-right:12px;display:inline-block;" class="s7imageItem" id="comp-io8rsy2fdataItem-io8rsy34" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.3"><a href="https://www.youtube.com/channel/UCiqH9b0i8e3y3cFkdqrr_7Q/videos?view_as=public" target="_blank" id="comp-io8rsy2fdataItem-io8rsy34link" class="s7imageItemlink" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.3.0"><div style="width:41px;height:41px;position:absolute;" id="comp-io8rsy2fdataItem-io8rsy34image" class="s7imageItemimage" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.3.0.0"><div class="s7imageItemimagepreloader" id="comp-io8rsy2fdataItem-io8rsy34imagepreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.3.0.0.0"></div><img id="comp-io8rsy2fdataItem-io8rsy34imageimage" alt="" src="https://static.wixstatic.com/media/c9fcc4_3c778fd7c6d541c9822af0a2ec5c53cf.png/v1/fill/w_41,h_41,al_c,usm_0.66_1.00_0.01/c9fcc4_3c778fd7c6d541c9822af0a2ec5c53cf.png" style="width:41px;height:41px;object-fit:cover;" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.3.0.0.$image" /></div></a></div><div style="width:41px;height:41px;margin-bottom:0;margin-right:12px;display:inline-block;" class="s7imageItem" id="comp-io8rsy2fdataItem-io8rsy36" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.4"><a href="https://www.linkedin.com/profile/preview?vpa=pub&amp;locale=es_ES" target="_blank" id="comp-io8rsy2fdataItem-io8rsy36link" class="s7imageItemlink" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.4.0"><div style="width:41px;height:41px;position:absolute;" id="comp-io8rsy2fdataItem-io8rsy36image" class="s7imageItemimage" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.4.0.0"><div class="s7imageItemimagepreloader" id="comp-io8rsy2fdataItem-io8rsy36imagepreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.4.0.0.0"></div><img id="comp-io8rsy2fdataItem-io8rsy36imageimage" alt="" src="https://static.wixstatic.com/media/c9fcc4_762078072cbf47299cc081590a57da06.png/v1/fill/w_41,h_41,al_c,usm_0.66_1.00_0.01/c9fcc4_762078072cbf47299cc081590a57da06.png" style="width:41px;height:41px;object-fit:cover;" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.4.0.0.$image" /></div></a></div><div style="width:41px;height:41px;margin-bottom:0;margin-right:12px;display:inline-block;" class="s7imageItem" id="comp-io8rsy2fdataItem-io8rsy2t" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.5"><a href="https://www.facebook.com/robertocarlos.villargarcia.7" target="_blank" id="comp-io8rsy2fdataItem-io8rsy2tlink" class="s7imageItemlink" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.5.0"><div style="width:41px;height:41px;position:absolute;" id="comp-io8rsy2fdataItem-io8rsy2timage" class="s7imageItemimage" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.5.0.0"><div class="s7imageItemimagepreloader" id="comp-io8rsy2fdataItem-io8rsy2timagepreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.5.0.0.0"></div><img id="comp-io8rsy2fdataItem-io8rsy2timageimage" alt="" src="https://static.wixstatic.com/media/c9fcc4_5e408f8bcaee43d5885eebd01ec882d1.png/v1/fill/w_41,h_41,al_c,usm_0.66_1.00_0.01/c9fcc4_5e408f8bcaee43d5885eebd01ec882d1.png" style="width:41px;height:41px;object-fit:cover;" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.5.0.0.$image" /></div></a></div><div style="width:41px;height:41px;margin-bottom:0;margin-right:12px;display:inline-block;" class="s7imageItem" id="comp-io8rsy2fdataItem-io8ta0qw" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.6"><a href="https://plus.google.com/u/0/+ROBERTOCARLOSVILLARGARCIA-Programador_Software_RVG/posts" target="_blank" id="comp-io8rsy2fdataItem-io8ta0qwlink" class="s7imageItemlink" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.6.0"><div style="width:41px;height:41px;position:absolute;" id="comp-io8rsy2fdataItem-io8ta0qwimage" class="s7imageItemimage" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.6.0.0"><div class="s7imageItemimagepreloader" id="comp-io8rsy2fdataItem-io8ta0qwimagepreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.6.0.0.0"></div><img id="comp-io8rsy2fdataItem-io8ta0qwimageimage" alt="" src="https://static.wixstatic.com/media/c9fcc4_0798044c830a4ec4b9a8f88aba364cb7.png/v1/fill/w_41,h_41,al_c,usm_0.66_1.00_0.01/c9fcc4_0798044c830a4ec4b9a8f88aba364cb7.png" style="width:41px;height:41px;object-fit:cover;" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.6.0.0.$image" /></div></a></div><div style="width:41px;height:41px;margin-bottom:0;margin-right:12px;display:inline-block;" class="s7imageItem" id="comp-io8rsy2fdataItem-io8u86lr" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.7"><a href="https://vimeo.com/user44581821" target="_blank" id="comp-io8rsy2fdataItem-io8u86lrlink" class="s7imageItemlink" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.7.0"><div style="width:41px;height:41px;position:absolute;" id="comp-io8rsy2fdataItem-io8u86lrimage" class="s7imageItemimage" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.7.0.0"><div class="s7imageItemimagepreloader" id="comp-io8rsy2fdataItem-io8u86lrimagepreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.7.0.0.0"></div><img id="comp-io8rsy2fdataItem-io8u86lrimageimage" alt="" src="https://static.wixstatic.com/media/c9fcc4_eb32b2c1958843b99d6f46f5246df145.png/v1/fill/w_41,h_41,al_c,usm_0.66_1.00_0.01/c9fcc4_eb32b2c1958843b99d6f46f5246df145.png" style="width:41px;height:41px;object-fit:cover;" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.7.0.0.$image" /></div></a></div><div style="width:41px;height:41px;margin-bottom:0;margin-right:12px;display:inline-block;" class="s7imageItem" id="comp-io8rsy2fdataItem-io8ta0qx" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.8"><a href="http://www.software-rvg.com/#!contacto/c24vq" target="_blank" id="comp-io8rsy2fdataItem-io8ta0qxlink" class="s7imageItemlink" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.8.0"><div style="width:41px;height:41px;position:absolute;" id="comp-io8rsy2fdataItem-io8ta0qximage" class="s7imageItemimage" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.8.0.0"><div class="s7imageItemimagepreloader" id="comp-io8rsy2fdataItem-io8ta0qximagepreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.8.0.0.0"></div><img id="comp-io8rsy2fdataItem-io8ta0qximageimage" alt="" src="https://static.wixstatic.com/media/c9fcc4_ce689d62f0144e10a56590c4644455dd.png/v1/fill/w_41,h_41,al_c,usm_0.66_1.00_0.01/c9fcc4_ce689d62f0144e10a56590c4644455dd.png" style="width:41px;height:41px;object-fit:cover;" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.8.0.0.$image" /></div></a></div><div style="width:41px;height:41px;margin-bottom:0;margin-right:12px;display:inline-block;" class="s7imageItem" id="comp-io8rsy2fdataItem-io8ta0qy" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.9"><a href="http://codepen.io/SoftwareRVG/" target="_blank" id="comp-io8rsy2fdataItem-io8ta0qylink" class="s7imageItemlink" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.9.0"><div style="width:41px;height:41px;position:absolute;" id="comp-io8rsy2fdataItem-io8ta0qyimage" class="s7imageItemimage" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.9.0.0"><div class="s7imageItemimagepreloader" id="comp-io8rsy2fdataItem-io8ta0qyimagepreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.9.0.0.0"></div><img id="comp-io8rsy2fdataItem-io8ta0qyimageimage" alt="" src="https://static.wixstatic.com/media/c9fcc4_0b735e76f1064051b2bcda1fe2563372.png/v1/fill/w_41,h_41,al_c,usm_0.66_1.00_0.01/c9fcc4_0b735e76f1064051b2bcda1fe2563372.png" style="width:41px;height:41px;object-fit:cover;" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.9.0.0.$image" /></div></a></div><div style="width:41px;height:41px;margin-bottom:0;margin-right:12px;display:inline-block;" class="s7imageItem" id="comp-io8rsy2fdataItem-io8ta0qz" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.a"><a href="https://foro.mozilla-hispano.org/users/softwarervg/activity" target="_blank" id="comp-io8rsy2fdataItem-io8ta0qzlink" class="s7imageItemlink" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.a.0"><div style="width:41px;height:41px;position:absolute;" id="comp-io8rsy2fdataItem-io8ta0qzimage" class="s7imageItemimage" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.a.0.0"><div class="s7imageItemimagepreloader" id="comp-io8rsy2fdataItem-io8ta0qzimagepreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.a.0.0.0"></div><img id="comp-io8rsy2fdataItem-io8ta0qzimageimage" alt="" src="https://static.wixstatic.com/media/c9fcc4_827c566f371e47e7a25bb1ee5b241148.png/v1/fill/w_41,h_41,al_c,usm_0.66_1.00_0.01/c9fcc4_827c566f371e47e7a25bb1ee5b241148.png" style="width:41px;height:41px;object-fit:cover;" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.a.0.0.$image" /></div></a></div><div style="width:41px;height:41px;margin-bottom:0;margin-right:12px;display:inline-block;" class="s7imageItem" id="comp-io8rsy2fdataItem-io8ta0r1" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.b"><a href="https://github.com/SoftwareRVG" target="_blank" id="comp-io8rsy2fdataItem-io8ta0r1link" class="s7imageItemlink" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.b.0"><div style="width:41px;height:41px;position:absolute;" id="comp-io8rsy2fdataItem-io8ta0r1image" class="s7imageItemimage" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.b.0.0"><div class="s7imageItemimagepreloader" id="comp-io8rsy2fdataItem-io8ta0r1imagepreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.b.0.0.0"></div><img id="comp-io8rsy2fdataItem-io8ta0r1imageimage" alt="" src="https://static.wixstatic.com/media/c9fcc4_35f5cd653dfb465d9df4b46baab49162.png/v1/fill/w_41,h_41,al_c,usm_0.66_1.00_0.01/c9fcc4_35f5cd653dfb465d9df4b46baab49162.png" style="width:41px;height:41px;object-fit:cover;" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.b.0.0.$image" /></div></a></div><div style="width:41px;height:41px;margin-bottom:0;margin-right:12px;display:inline-block;" class="s7imageItem" id="comp-io8rsy2fdataItem-io8ta0r4" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.c"><a href="http://da7d0bcc-1365-41b6-98eb-fcdfd44f8c51.mobapp.at/landing/Desktop#.Vzim9jGbvIU" target="_blank" id="comp-io8rsy2fdataItem-io8ta0r4link" class="s7imageItemlink" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.c.0"><div style="width:41px;height:41px;position:absolute;" id="comp-io8rsy2fdataItem-io8ta0r4image" class="s7imageItemimage" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.c.0.0"><div class="s7imageItemimagepreloader" id="comp-io8rsy2fdataItem-io8ta0r4imagepreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.c.0.0.0"></div><img id="comp-io8rsy2fdataItem-io8ta0r4imageimage" alt="" src="https://static.wixstatic.com/media/c9fcc4_e29c94a986f14eabaf430c65cd843d59.png/v1/fill/w_41,h_41,al_c,usm_0.66_1.00_0.01/c9fcc4_e29c94a986f14eabaf430c65cd843d59.png" style="width:41px;height:41px;object-fit:cover;" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.c.0.0.$image" /></div></a></div><div style="width:41px;height:41px;margin-bottom:0;margin-right:12px;display:inline-block;" class="s7imageItem" id="comp-io8rsy2fdataItem-io8ta0r3" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.d"><a href="http://rober113.blogspot.com.es/" target="_blank" id="comp-io8rsy2fdataItem-io8ta0r3link" class="s7imageItemlink" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.d.0"><div style="width:41px;height:41px;position:absolute;" id="comp-io8rsy2fdataItem-io8ta0r3image" class="s7imageItemimage" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.d.0.0"><div class="s7imageItemimagepreloader" id="comp-io8rsy2fdataItem-io8ta0r3imagepreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.d.0.0.0"></div><img id="comp-io8rsy2fdataItem-io8ta0r3imageimage" alt="" src="https://static.wixstatic.com/media/c9fcc4_9d5672592cd44c2b9a460906f40115b9.png/v1/fill/w_41,h_41,al_c,usm_0.66_1.00_0.01/c9fcc4_9d5672592cd44c2b9a460906f40115b9.png" style="width:41px;height:41px;object-fit:cover;" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.d.0.0.$image" /></div></a></div><div style="width:41px;height:41px;margin-bottom:0;margin-right:12px;display:inline-block;" class="s7imageItem" id="comp-io8rsy2fdataItem-io8u86ln" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.e"><a href="https://www.youtube.com/channel/UCHwvG7sn6SfbVA8VJUxIxOQ" target="_blank" id="comp-io8rsy2fdataItem-io8u86lnlink" class="s7imageItemlink" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.e.0"><div style="width:41px;height:41px;position:absolute;" id="comp-io8rsy2fdataItem-io8u86lnimage" class="s7imageItemimage" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.e.0.0"><div class="s7imageItemimagepreloader" id="comp-io8rsy2fdataItem-io8u86lnimagepreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.e.0.0.0"></div><img id="comp-io8rsy2fdataItem-io8u86lnimageimage" alt="" src="https://static.wixstatic.com/media/c9fcc4_3c778fd7c6d541c9822af0a2ec5c53cf.png/v1/fill/w_41,h_41,al_c,usm_0.66_1.00_0.01/c9fcc4_3c778fd7c6d541c9822af0a2ec5c53cf.png" style="width:41px;height:41px;object-fit:cover;" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.e.0.0.$image" /></div></a></div><div style="width:41px;height:41px;margin-bottom:0;margin-right:12px;display:inline-block;" class="s7imageItem" id="comp-io8rsy2fdataItem-io8ta0qu" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.f"><a href="http://rvg-sport-autos.blogspot.com.es/" target="_blank" id="comp-io8rsy2fdataItem-io8ta0qulink" class="s7imageItemlink" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.f.0"><div style="width:41px;height:41px;position:absolute;" id="comp-io8rsy2fdataItem-io8ta0quimage" class="s7imageItemimage" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.f.0.0"><div class="s7imageItemimagepreloader" id="comp-io8rsy2fdataItem-io8ta0quimagepreloader" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.f.0.0.0"></div><img id="comp-io8rsy2fdataItem-io8ta0quimageimage" alt="" src="https://static.wixstatic.com/media/c9fcc4_9d5672592cd44c2b9a460906f40115b9.png/v1/fill/w_41,h_41,al_c,usm_0.66_1.00_0.01/c9fcc4_9d5672592cd44c2b9a460906f40115b9.png" style="width:41px;height:41px;object-fit:cover;" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$l7iwa.1.$comp-io8rsy2f.0.f.0.0.$image" /></div></a></div></div>
+	</footer>
+ </body>
+</html>
+    
+    
+        <script>
+       
+        var renderer, scene, camera, composer, circle, skelet, particle;
+
+window.onload = function() {
+  init();
+  animate();
+}
+
+function init() {
+  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  renderer.setPixelRatio((window.devicePixelRatio) ? window.devicePixelRatio : 1);
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.autoClear = false;
+  renderer.setClearColor(0x000000, 0.0);
+  document.getElementById('canvas').appendChild(renderer.domElement);
+
+  scene = new THREE.Scene();
+
+  camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
+  camera.position.z = 400;
+  scene.add(camera);
+
+  circle = new THREE.Object3D();
+  skelet = new THREE.Object3D();
+  particle = new THREE.Object3D();
+
+  scene.add(circle);
+  scene.add(skelet);
+  scene.add(particle);
+
+  var geometry = new THREE.TetrahedronGeometry(2, 0);
+  var geom = new THREE.IcosahedronGeometry(7, 1);
+  var geom2 = new THREE.IcosahedronGeometry(15, 1);
+
+  var material = new THREE.MeshPhongMaterial({
+    color: 0xf7fe2e,
+    shading: THREE.FlatShading
+  });
+
+  for (var i = 0; i < 1000; i++) {
+    var mesh = new THREE.Mesh(geometry, material);
+    mesh.position.set(Math.random() - 0.5, Math.random() - 0.5, Math.random() - 0.5).normalize();
+    mesh.position.multiplyScalar(90 + (Math.random() * 700));
+    mesh.rotation.set(Math.random() * 2, Math.random() * 2, Math.random() * 2);
+    particle.add(mesh);
+  }
+
+  var mat = new THREE.MeshPhongMaterial({
+    color: 0xdf3a01,
+    shading: THREE.FlatShading
+  });
+
+  var mat2 = new THREE.MeshPhongMaterial({
+    color: 0xffff00,
+    wireframe: true,
+    side: THREE.DoubleSide
+
+  });
+
+  var planet = new THREE.Mesh(geom, mat);
+  planet.scale.x = planet.scale.y = planet.scale.z = 16;
+  circle.add(planet);
+
+  var planet2 = new THREE.Mesh(geom2, mat2);
+  planet2.scale.x = planet2.scale.y = planet2.scale.z = 10;
+  skelet.add(planet2);
+
+  var ambientLight = new THREE.AmbientLight(0x999999 );
+  scene.add(ambientLight);
+  
+  var lights = [];
+lights[0] = new THREE.DirectionalLight( 0xffffff, 1 );
+lights[0].position.set( 1, 0, 0 );
+lights[1] = new THREE.DirectionalLight( 0x11E8BB, 1 );
+lights[1].position.set( 0.75, 1, 0.5 );
+lights[2] = new THREE.DirectionalLight( 0x8200C9, 1 );
+lights[2].position.set( -0.75, -1, 0.5 );
+scene.add( lights[0] );
+scene.add( lights[1] );
+scene.add( lights[2] );
+  
+
+  window.addEventListener('resize', onWindowResize, false);
+
+};
+
+function onWindowResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
+
+function animate() {
+  requestAnimationFrame(animate);
+
+  particle.rotation.x += 0.0000;
+  particle.rotation.y -= 0.0040;
+  circle.rotation.x -= 0.0020;
+  circle.rotation.y -= 0.0030;
+  skelet.rotation.x -= 0.0010;
+  skelet.rotation.y += 0.0020;
+  renderer.clear();
+
+  renderer.render( scene, camera )
+};
+      //# sourceURL=pen.js
+    </script>
+
+    
+    
+    
+  </body>
+</html>
+ 
